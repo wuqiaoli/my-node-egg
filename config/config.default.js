@@ -6,11 +6,11 @@ module.exports = appInfo => {
   // 数据库插件
  	config.mysql = {
 	  	client: {
-		    host: 'rm-bp19tybve1b98k8fqpo.mysql.rds.aliyuncs.com',
+		    host: '',
 		    port: '3306',
-		    user: 'chengxi_dev',
-		    password: '!@#Chengxi',
-		    database: 'shouhou_dev_t',
+		    user: '',
+		    password: '',
+		    database: '',
 	  	},
 	  	app: true,
 	  	agent: false,
