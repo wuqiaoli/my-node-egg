@@ -1,0 +1,53 @@
+{
+  "name": "myappegg",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "await-stream-ready": "^1.0.1",
+    "egg": "^2.2.1",
+    "egg-cors": "^2.1.2",
+    "egg-mysql": "^3.0.0",
+    "egg-scripts": "^2.5.0",
+    "egg-socket.io": "^4.1.5",
+    "egg-validate": "^2.0.2",
+    "formidable": "^1.2.1",
+    "md5": "^2.2.1",
+    "silly-datetime": "^0.1.2",
+    "stream-wormhole": "^1.1.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.14.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^6.0.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-myappegg --sticky",
+    "stop": "egg-scripts stop --title=egg-server-myappegg",
+    "dev": "egg-bin dev --sticky",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "wuqiaoli",
+  "license": "MIT"
+}
